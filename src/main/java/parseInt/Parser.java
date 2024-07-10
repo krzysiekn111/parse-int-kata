@@ -40,7 +40,7 @@ public class Parser {
                     count++;
                     copyOfRest += s[t];
                 }
-                System.out.print(copyOfRest.replaceAll("    ", " ") + "|t:"+ whereIsThousand + "|");
+//                System.out.print(copyOfRest.replaceAll("    ", " ") + "|t:"+ whereIsThousand + "|");
                 zliczone = true;
             }
 
@@ -50,11 +50,11 @@ public class Parser {
                     i++;
                     continue;
                 }
-                System.out.print("count=" + count + "|");
+//                System.out.print("count=" + count + "|");
                 if (count == 1) {
                     if (UtilMethods.readValue(s[i]).length() == 1 ) {
                         result+= "0" + UtilMethods.readValue(s[i+1]);
-                        System.out.println(result);
+//                        System.out.println(result);
                         i++;
                         continue;
                     } else {
@@ -187,8 +187,8 @@ public class Parser {
          */
 
 
-//        System.out.println(parseInt("two hundred thousand") + " || thousand");
-//        System.out.println(parseInt("two hundred thousand and one hundred") + " || thousand and one hundred");
+        System.out.println(parseInt("two hundred thousand"));
+        System.out.println(parseInt("two hundred thousand and one hundred"));
         System.out.println(parseInt("one hundred and twenty thousand"));
         System.out.println(parseInt("one hundred and three thousand")); // nie
         System.out.println(parseInt("one hundred and three thousand and four hundred")); // nie
@@ -196,21 +196,21 @@ public class Parser {
         System.out.println(parseInt("one hundred and three thousand and four hundred and six"));
         System.out.println(parseInt("one hundred and twenty three thousand and four hundred and six"));
         System.out.println(parseInt("one hundred and twenty three thousand and four hundred and fifty six"));
-//        System.out.println(parseInt("twenty three thousand"));
-//        System.out.println(parseInt("twenty thousand"));
-//        System.out.println(parseInt("two hundred thousand and three hundred"));
-//        System.out.println(parseInt("two hundred thousand and three hundred thirty"));
-//        System.out.println(parseInt("two hundred thousand and three hundred and three"));
-//        System.out.println(parseInt("two hundred thousand and three hundred thirty three"));
-//        System.out.println(parseInt("two hundred thousand and thirty"));
-//        System.out.println(parseInt("two hundred thousand and thirty three"));
-//        System.out.println(parseInt("five hundred thousands five hundred"));
-//        System.out.println(parseInt("seven hundred eighty-three thousand nine hundred and nineteen"));
-//        System.out.println(parseInt("six hundred twenty-three thousand four hundred and fifty")); // fifty jest czytane jako 5
-//        System.out.println(parseInt("nine thousand nine hundred ninety-nine"));
-//        System.out.println(parseInt("one hundred"));
-//        System.out.println(parseInt("eighty-eight"));
-//        System.out.println(parseInt("five hundred thousand"));
+        System.out.println(parseInt("twenty three thousand"));
+        System.out.println(parseInt("twenty thousand"));
+        System.out.println(parseInt("two hundred thousand and three hundred"));
+        System.out.println(parseInt("two hundred thousand and three hundred thirty"));
+        System.out.println(parseInt("two hundred thousand and three hundred and three"));
+        System.out.println(parseInt("two hundred thousand and three hundred thirty three"));
+        System.out.println(parseInt("two hundred thousand and thirty"));
+        System.out.println(parseInt("two hundred thousand and thirty three"));
+        System.out.println(parseInt("five hundred thousands five hundred"));
+        System.out.println(parseInt("seven hundred eighty-three thousand nine hundred and nineteen"));
+        System.out.println(parseInt("six hundred twenty-three thousand four hundred and fifty")); // fifty jest czytane jako 5
+        System.out.println(parseInt("nine thousand nine hundred ninety-nine"));
+        System.out.println(parseInt("one hundred"));
+        System.out.println(parseInt("eighty-eight"));
+        System.out.println(parseInt("five hundred thousand"));
 
 
     }
